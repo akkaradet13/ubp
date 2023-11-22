@@ -1,0 +1,195 @@
+[debug] [2023-11-21T16:01:04.467Z] ----------------------------------------------------------------------
+[debug] [2023-11-21T16:01:04.469Z] Command:       /Users/mac/.nvm/versions/node/v20.9.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-11-21T16:01:04.469Z] CLI Version:   12.4.2
+[debug] [2023-11-21T16:01:04.469Z] Platform:      darwin
+[debug] [2023-11-21T16:01:04.469Z] Node Version:  v20.9.0
+[debug] [2023-11-21T16:01:04.469Z] Time:          Tue Nov 21 2023 23:01:04 GMT+0700 (Indochina Time)
+[debug] [2023-11-21T16:01:04.470Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-21T16:01:04.511Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-21T16:01:04.511Z] > authorizing via signed-in user (ubp.web1@gmail.com)
+[debug] [2023-11-21T16:01:04.511Z] [iam] checking project ubpweb-3ae76 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-21T16:01:04.512Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions [none]
+[debug] [2023-11-21T16:01:04.512Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions x-goog-quota-user=projects/ubpweb-3ae76
+[debug] [2023-11-21T16:01:04.512Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:01:05.723Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions 200
+[debug] [2023-11-21T16:01:05.724Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:01:05.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 [none]
+[debug] [2023-11-21T16:01:06.322Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 200
+[debug] [2023-11-21T16:01:06.322Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 {"projectId":"ubpweb-3ae76","projectNumber":"569271169951","displayName":"ubpweb","name":"projects/ubpweb-3ae76","resources":{"hostingSite":"ubpweb-3ae76"},"state":"ACTIVE","etag":"1_9011b2fc-3fd2-4643-bfd7-2da86ee53434"}
+[debug] [2023-11-21T16:01:09.885Z] defaultcredentials: writing to file /Users/mac/.config/firebase/ubp_web1_gmail.com_application_default_credentials.json
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-11-21T16:01:44.938Z] TypeError: Cannot destructure property 'customConfig' of '(intermediate value)(intermediate value)(intermediate value)' as it is null.
+    at loadConfig (/Users/mac/Desktop/synergy/ubp.webapp/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/server/config.js:640:41)
+    at getConfig (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:386:28)
+    at build (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:62:65)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:216:33)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-11-21T16:03:40.487Z] ----------------------------------------------------------------------
+[debug] [2023-11-21T16:03:40.489Z] Command:       /Users/mac/.nvm/versions/node/v20.9.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-11-21T16:03:40.489Z] CLI Version:   12.4.2
+[debug] [2023-11-21T16:03:40.489Z] Platform:      darwin
+[debug] [2023-11-21T16:03:40.489Z] Node Version:  v20.9.0
+[debug] [2023-11-21T16:03:40.489Z] Time:          Tue Nov 21 2023 23:03:40 GMT+0700 (Indochina Time)
+[debug] [2023-11-21T16:03:40.490Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-21T16:03:40.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-21T16:03:40.528Z] > authorizing via signed-in user (ubp.web1@gmail.com)
+[debug] [2023-11-21T16:03:40.528Z] [iam] checking project ubpweb-3ae76 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-21T16:03:40.529Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions [none]
+[debug] [2023-11-21T16:03:40.529Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions x-goog-quota-user=projects/ubpweb-3ae76
+[debug] [2023-11-21T16:03:40.530Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:03:41.680Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions 200
+[debug] [2023-11-21T16:03:41.680Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:03:41.680Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 [none]
+[debug] [2023-11-21T16:03:42.089Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 200
+[debug] [2023-11-21T16:03:42.089Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 {"projectId":"ubpweb-3ae76","projectNumber":"569271169951","displayName":"ubpweb","name":"projects/ubpweb-3ae76","resources":{"hostingSite":"ubpweb-3ae76"},"state":"ACTIVE","etag":"1_9011b2fc-3fd2-4643-bfd7-2da86ee53434"}
+[debug] [2023-11-21T16:03:45.592Z] defaultcredentials: writing to file /Users/mac/.config/firebase/ubp_web1_gmail.com_application_default_credentials.json
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-11-21T16:04:21.707Z] TypeError: Cannot destructure property 'customConfig' of '(intermediate value)(intermediate value)(intermediate value)' as it is null.
+    at loadConfig (/Users/mac/Desktop/synergy/ubp.webapp/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/server/config.js:640:41)
+    at getConfig (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:386:28)
+    at build (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:62:65)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:216:33)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-11-21T16:07:48.199Z] ----------------------------------------------------------------------
+[debug] [2023-11-21T16:07:48.201Z] Command:       /Users/mac/.nvm/versions/node/v20.9.0/bin/node /usr/local/bin/firebase deploy --debug
+[debug] [2023-11-21T16:07:48.202Z] CLI Version:   12.4.2
+[debug] [2023-11-21T16:07:48.202Z] Platform:      darwin
+[debug] [2023-11-21T16:07:48.202Z] Node Version:  v20.9.0
+[debug] [2023-11-21T16:07:48.202Z] Time:          Tue Nov 21 2023 23:07:48 GMT+0700 (Indochina Time)
+[debug] [2023-11-21T16:07:48.202Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-21T16:07:48.242Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-21T16:07:48.243Z] > authorizing via signed-in user (ubp.web1@gmail.com)
+[debug] [2023-11-21T16:07:48.243Z] [iam] checking project ubpweb-3ae76 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-21T16:07:48.244Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions [none]
+[debug] [2023-11-21T16:07:48.244Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions x-goog-quota-user=projects/ubpweb-3ae76
+[debug] [2023-11-21T16:07:48.244Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:07:49.455Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions 200
+[debug] [2023-11-21T16:07:49.456Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:07:49.456Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 [none]
+[debug] [2023-11-21T16:07:50.139Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 200
+[debug] [2023-11-21T16:07:50.140Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 {"projectId":"ubpweb-3ae76","projectNumber":"569271169951","displayName":"ubpweb","name":"projects/ubpweb-3ae76","resources":{"hostingSite":"ubpweb-3ae76"},"state":"ACTIVE","etag":"1_9011b2fc-3fd2-4643-bfd7-2da86ee53434"}
+[debug] [2023-11-21T16:07:53.699Z] defaultcredentials: writing to file /Users/mac/.config/firebase/ubp_web1_gmail.com_application_default_credentials.json
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-11-21T16:08:27.370Z] TypeError: Cannot destructure property 'customConfig' of '(intermediate value)(intermediate value)(intermediate value)' as it is null.
+    at loadConfig (/Users/mac/Desktop/synergy/ubp.webapp/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/server/config.js:640:41)
+    at getConfig (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:386:28)
+    at build (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:62:65)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:216:33)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-11-21T16:26:32.503Z] ----------------------------------------------------------------------
+[debug] [2023-11-21T16:26:32.504Z] Command:       /Users/mac/.nvm/versions/node/v20.9.0/bin/node /usr/local/bin/firebase deploy --debug
+[debug] [2023-11-21T16:26:32.505Z] CLI Version:   12.4.2
+[debug] [2023-11-21T16:26:32.505Z] Platform:      darwin
+[debug] [2023-11-21T16:26:32.505Z] Node Version:  v20.9.0
+[debug] [2023-11-21T16:26:32.505Z] Time:          Tue Nov 21 2023 23:26:32 GMT+0700 (Indochina Time)
+[debug] [2023-11-21T16:26:32.505Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-21T16:26:32.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-21T16:26:32.542Z] > authorizing via signed-in user (ubp.web1@gmail.com)
+[debug] [2023-11-21T16:26:32.543Z] [iam] checking project ubpweb-3ae76 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-21T16:26:32.543Z] > refreshing access token with scopes: []
+[debug] [2023-11-21T16:26:32.544Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-21T16:26:32.544Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-21T16:26:32.745Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-21T16:26:32.745Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-21T16:26:32.758Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions [none]
+[debug] [2023-11-21T16:26:32.758Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions x-goog-quota-user=projects/ubpweb-3ae76
+[debug] [2023-11-21T16:26:32.758Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:26:33.932Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions 200
+[debug] [2023-11-21T16:26:33.932Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:26:33.934Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 [none]
+[debug] [2023-11-21T16:26:34.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 200
+[debug] [2023-11-21T16:26:34.361Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 {"projectId":"ubpweb-3ae76","projectNumber":"569271169951","displayName":"ubpweb","name":"projects/ubpweb-3ae76","resources":{"hostingSite":"ubpweb-3ae76"},"state":"ACTIVE","etag":"1_9011b2fc-3fd2-4643-bfd7-2da86ee53434"}
+[debug] [2023-11-21T16:26:37.841Z] defaultcredentials: writing to file /Users/mac/.config/firebase/ubp_web1_gmail.com_application_default_credentials.json
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-11-21T16:27:08.583Z] TypeError: Cannot destructure property 'customConfig' of '(intermediate value)(intermediate value)(intermediate value)' as it is null.
+    at loadConfig (/Users/mac/Desktop/synergy/ubp.webapp/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/server/config.js:640:41)
+    at getConfig (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:386:28)
+    at build (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:62:65)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:216:33)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-11-21T16:27:33.218Z] ----------------------------------------------------------------------
+[debug] [2023-11-21T16:27:33.220Z] Command:       /Users/mac/.nvm/versions/node/v20.9.0/bin/node /usr/local/bin/firebase deploy --debug
+[debug] [2023-11-21T16:27:33.220Z] CLI Version:   12.4.2
+[debug] [2023-11-21T16:27:33.220Z] Platform:      darwin
+[debug] [2023-11-21T16:27:33.221Z] Node Version:  v20.9.0
+[debug] [2023-11-21T16:27:33.221Z] Time:          Tue Nov 21 2023 23:27:33 GMT+0700 (Indochina Time)
+[debug] [2023-11-21T16:27:33.221Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-21T16:27:33.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-21T16:27:33.258Z] > authorizing via signed-in user (ubp.web1@gmail.com)
+[debug] [2023-11-21T16:27:33.259Z] [iam] checking project ubpweb-3ae76 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-21T16:27:33.259Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions [none]
+[debug] [2023-11-21T16:27:33.260Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions x-goog-quota-user=projects/ubpweb-3ae76
+[debug] [2023-11-21T16:27:33.260Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:27:34.470Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions 200
+[debug] [2023-11-21T16:27:34.471Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ubpweb-3ae76:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-21T16:27:34.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 [none]
+[debug] [2023-11-21T16:27:35.147Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 200
+[debug] [2023-11-21T16:27:35.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ubpweb-3ae76 {"projectId":"ubpweb-3ae76","projectNumber":"569271169951","displayName":"ubpweb","name":"projects/ubpweb-3ae76","resources":{"hostingSite":"ubpweb-3ae76"},"state":"ACTIVE","etag":"1_9011b2fc-3fd2-4643-bfd7-2da86ee53434"}
+[debug] [2023-11-21T16:27:38.582Z] defaultcredentials: writing to file /Users/mac/.config/firebase/ubp_web1_gmail.com_application_default_credentials.json
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-11-21T16:28:08.210Z] TypeError: Cannot destructure property 'customConfig' of '(intermediate value)(intermediate value)(intermediate value)' as it is null.
+    at loadConfig (/Users/mac/Desktop/synergy/ubp.webapp/node_modules/.pnpm/next@14.0.0_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/server/config.js:640:41)
+    at getConfig (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:386:28)
+    at build (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:62:65)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:216:33)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
